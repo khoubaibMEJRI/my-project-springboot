@@ -1,0 +1,16 @@
+# Build et dépendances
+target/
+build/
+*.jar
+*.war
+
+# IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Fichiers temporaires
+*.log
+*.tmp
