@@ -51,7 +51,7 @@
                         <th class="text-center">ID</th>
                         <th>Name</th>
                         <th class="text-center">Quantity</th>
-                        <th class="text-center">Price</th>
+                        <th class="text-center">Price (DT)</th>
                         <th class="text-center">Actions</th>
                     </tr>
                 </thead>
@@ -60,7 +60,7 @@
                         <td class="text-center" th:text="${medicament.id}"></td>
                         <td th:text="${medicament.nom}"></td>
                         <td class="text-center" th:text="${medicament.quantite}"></td>
-                        <td class="text-center" th:text="${'$' + medicament.prix}"></td>
+                        <td class="text-center" th:text="${ medicament.prix}"></td>
                         <td class="text-center">
                             <div class="d-flex justify-content-center">
                                 <a th:href="@{/pharmacie/medicaments/modifier/{id}(id=${medicament.id})}" 
